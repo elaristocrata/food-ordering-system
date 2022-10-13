@@ -1,4 +1,11 @@
 package com.food.ordering.system.order.service.domain.valueobject;
 
-public class OrderItemId {
+import com.food.ordering.system.domain.valueobject.BaseId;
+
+import java.util.UUID;
+
+public class OrderItemId extends BaseId<UUID> {
+    public OrderItemId(UUID value) {
+        super(value);
+    }
 }
